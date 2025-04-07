@@ -41,16 +41,16 @@
       "import": "./dist/index.mjs",
       "require": "./dist/index.js"
     },
+    "./internal": {
+      "types": "./dist/internal/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js"
+    },
     "./test": {
       "types": "./test/dist/index.d.ts",
       "import": "./test/dist/index.mjs",
       "module": "./test/dist/index.mjs",
       "require": "./test/dist/index.js"
-    },
-    "./rsc": {
-      "types": "./rsc/dist/index.d.ts",
-      "react-server": "./rsc/dist/rsc-server.mjs",
-      "import": "./rsc/dist/rsc-client.mjs"
     },
     "./mcp-stdio": {
       "types": "./mcp-stdio/dist/index.d.ts",
@@ -81,13 +81,7 @@
     "zod": "3.23.8"
   },
   "peerDependencies": {
-    "react": "^18 || ^19 || ^19.0.0-rc",
     "zod": "^3.23.8"
-  },
-  "peerDependenciesMeta": {
-    "react": {
-      "optional": true
-    }
   },
   "engines": {
     "node": ">=18"
